@@ -36,20 +36,20 @@ map.on('load', function () {
             'circle-color': [
                 'step',
                 ['get', 'point_count'],
-                '#00BCD4',
-                10,
-                '#2196F3',
-                30,
-                '#3F51B5'
+                '#51bbd6',
+                100,
+                '#f1f075',
+                750,
+                '#f28cb1'
             ],
             'circle-radius': [
                 'step',
                 ['get', 'point_count'],
-                15,
-                10,
                 20,
+                100,
                 30,
-                25
+                750,
+                40
             ]
         }
     });
@@ -106,7 +106,7 @@ map.on('load', function () {
         console.log(campgrounds);
         const { popUpText } = e.features[0].properties;
         const coordinates = e.features[0].geometry.coordinates.slice();
-        
+
 
         // Ensure that if the map is zoomed out such that
         // multiple copies of the feature are visible, the
