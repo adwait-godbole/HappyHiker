@@ -24,7 +24,7 @@ const userRoutes = require('./routes/users');
 
 const MongoDBStore = require('connect-mongo');
 
-const dbUrl =  process.env.DB_URL || 'mongodb://localhost:27017/happy-hikers'
+const dbUrl =  process.env.DB_URL || 'mongodb://localhost:27017/happy-hikers';
 
 mongoose.connect(dbUrl,{
     useNewUrlParser: true,
@@ -49,7 +49,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(mongoSanitize());
 
-const secret = process.env.SECRET || 'thisismysecret'
+const secret = process.env.SECRET || 'thisismysecret';
 
 app.use(session({
     name : 'session',
