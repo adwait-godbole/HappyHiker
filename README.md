@@ -1,4 +1,4 @@
-# happyhikers
+# happyhiker
 My first web development full stack project.
 
 View Campgrounds across the globe, leave reviews and add your own campgrounds with pictures and reviews. The tech stack used in this project is HTML, CSS, Bootstrap and JavaScript
